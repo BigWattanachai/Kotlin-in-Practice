@@ -12,7 +12,7 @@ class HigherOrderFunctionsTest {
     @Test
     fun makeMathFunctionTest() {
 
-        fun makeMathFunction(num1: Int): (Int) -> Int = { num2 -> num1 * num2 }
+        fun makeMathFunction(num: Int): (Int) -> Int = { it * num }
         val mult2 = makeMathFunction(2)
 
         assertEquals(6, mult2(3))
@@ -26,7 +26,7 @@ class HigherOrderFunctionsTest {
 
         val multiply2 = { num: Int -> num * 2 }
 
-        assertThat(arrayListOf(2, 4, 6, 8, 10), `is`(mathOnList(arrayOf(1, 2, 3, 4, 5), multiply2)))
+        assertThat(listOf(2, 4, 6, 8, 10), `is`(mathOnList(arrayOf(1, 2, 3, 4, 5), multiply2)))
 
     }
 }

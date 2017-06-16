@@ -21,7 +21,6 @@ class RecursiveTest {
         assertEquals(5, fibo(5))
     }
 
-
     @Test
     fun tailrectFactorial() {
         fun fact(number: Int): Int {
@@ -35,6 +34,3 @@ class RecursiveTest {
         assertEquals(120, fact(5))
     }
 }
-
-
-

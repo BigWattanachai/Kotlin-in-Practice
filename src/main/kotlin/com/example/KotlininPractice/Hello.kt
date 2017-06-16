@@ -1,6 +1,9 @@
 package com.example.KotlininPractice
 
+typealias String1 = String
 fun main(args: Array<String>) {
-    println("Hello, World")
+
+    val test: String1 = "kfkfkfk"
+
 }
 
