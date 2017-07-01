@@ -23,10 +23,8 @@ class HigherOrderFunctionsTest {
         fun mathOnList(numList: Array<Int>, myFunc: (num: Int) -> Int): List<Int> {
             return numList.map(myFunc)
         }
-
         val multiply2 = { num: Int -> num * 2 }
 
         assertThat(listOf(2, 4, 6, 8, 10), `is`(mathOnList(arrayOf(1, 2, 3, 4, 5), multiply2)))
-
     }
 }
